@@ -14,7 +14,7 @@
   </head>
   <body>
     User:
-    ${usuario}
+    ${usuario}<br>
     Password:
     <%=request.getAttribute("password") %>
     
