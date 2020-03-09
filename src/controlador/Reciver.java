@@ -39,11 +39,19 @@ public class Reciver extends HttpServlet {
 		
 		String user = request.getParameter("usuario");
 		String pass = request.getParameter("password");
-		
+		String edad = request.getParameter("edad");
+		String asig = request.getParameter("asig");
+		String[] unidad = request.getParameterValues("unidad");
 		
 		if (user.toUpperCase().equals("ADMIN") && pass.equals("admin")) {
 			request.setAttribute("usuario", user);
 			request.setAttribute("password", pass);
+			request.setAttribute("edad", edad);
+			request.setAttribute("asig", asig);
+			for (int i = 0; i < unidad.length; i++) {
+				request.setAttribute("unidad"+i, unidad[i]);
+			}
+			
 			request.setAttribute("error", "false");
 		
 		request.getRequestDispatcher("postDatos.jsp").forward(request, response);

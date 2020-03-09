@@ -16,7 +16,16 @@
     User:
     ${usuario}<br>
     Password:
-    <%=request.getAttribute("password") %>
+    <%=request.getAttribute("password") %> <br>
+    Edad:
+    ${edad}<br>
+    Asignatura:
+    ${asig}<br>
+    Unidades:<br>
+    ${unidad0}<br>
+    ${unidad1}<br>
+    
+    <iframe src="https://giphy.com/embed/J1ABRhlfvQNwIOiAas" width="480" height="307" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/memecandy-J1ABRhlfvQNwIOiAas">via GIPHY</a></p>
     
 
     <!-- Optional JavaScript -->

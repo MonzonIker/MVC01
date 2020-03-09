@@ -29,6 +29,35 @@
 					<label for="password">Password</label> <input type="text"
 						class="form-control" id="password" name="password">
 				</div>
+				<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="edad" id="menor" value="15-20">
+  <label class="form-check-label" for="menor">15-20</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="edad" id="joven" value="20-30">
+  <label class="form-check-label" for="joven">20-30</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="edad" id="adulto" value="mayor30">
+  <label class="form-check-label" for="adulto">30+</label>
+</div><br>
+<select class="form-control" name="asig">
+  <option>asig1</option>
+  <option>asig2</option>
+  <option>asig3</option>
+</select>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="uni1" id="defaultCheck1" name="unidad">
+  <label class="form-check-label" for="defaultCheck1">
+    uni1
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="uni2" id="defaultCheck1" name="unidad">
+  <label class="form-check-label" for="defaultCheck1">
+    uni2
+  </label>
+</div>
 				<%
 					if (request.getAttribute("error").equals("true")) {
 				%>
